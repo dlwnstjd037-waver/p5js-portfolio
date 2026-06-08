@@ -14,7 +14,9 @@ body {
   min-height: 100vh;
   padding: 40px 24px;
 
-  background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+  background: linear-gradient(-45deg, #e0c3fc, #8ec5fc, #ff9a9e, #fecfef);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
 }
 
 
@@ -74,4 +76,17 @@ iframe {
   border: none;
   transform-origin: top left;
   transform: scale(0.82);
+}
+
+
+ @keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
